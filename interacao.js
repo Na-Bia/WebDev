@@ -1,4 +1,17 @@
 'use strict';
+
+// Função para perguntar o nome e exibir a mensagem personalizada
+const welcomeUser = () => {
+    const userName = prompt("Qual é o seu nome?");
+    if (userName) {
+        alert(`Bem-vindo(a), ${userName}!`);
+    } else {
+        alert("Bem-vindo(a)!");
+    }
+};
+
+// Chama a função ao carregar a página
+window.onload = welcomeUser;
     
 const switcher = document.querySelector('.btn');
 
